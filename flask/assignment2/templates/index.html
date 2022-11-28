@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: rgb(171, 118, 164);
+            text-align: center;
+        }
+
+        div.box {
+
+            background-color: rgb(205, 143, 204);
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            display: inline-block;
+            border: solid 2px black;
+        }
+
+        div.boxes {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome!</h1>
+    <div class=boxes>
+        {%for i in range(number):%}
+        <div class=box style="background-color:{{color_choice}}"></div>
+        {%endfor%}
+    </div>
+
+
+</body>
+
+</html>
